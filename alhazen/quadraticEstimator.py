@@ -1,13 +1,13 @@
 
 import numpy as np
 np.seterr(divide='ignore', invalid='ignore')
-import orphics.analysis.flatMaps as fmaps 
+import orphics.unmerged.analysis.flatMaps as fmaps 
 
 from scipy.fftpack import fftshift,ifftshift,fftfreq
 from scipy.interpolate import interp1d
 from enlib.fft import fft,ifft
 
-from orphics.tools.stats import timeit, bin2D
+from orphics.stats import timeit, bin2D
 import alhazen.quadFunctions as qfuncs
 
 import time
